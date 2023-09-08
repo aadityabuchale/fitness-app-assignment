@@ -1,0 +1,11 @@
+.search-result {
+    text-align: center;
+    font-size: 25px;
+    margin: 25px 10px 5px 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .search-result {
+        font-size: 20px;
+    }
+}

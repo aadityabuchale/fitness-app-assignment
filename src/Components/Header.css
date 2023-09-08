@@ -1,0 +1,77 @@
+header {
+    /* background-color: red; */
+    background: rgb(104, 47, 194);
+    background: linear-gradient(
+        90deg,
+        rgba(104, 47, 194, 1) 33%,
+        rgba(188, 94, 210, 1) 76%
+    );
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    align-items: center;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.searchbox {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchbox input {
+    width: 80%;
+    padding: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #868686;
+}
+
+.cardcount-dropdown {
+    width: 20%;
+}
+
+.cardcount-dropdown select {
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+.profile img {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 20px 7px;
+    }
+    .logo {
+        font-size: 0.6rem;
+    }
+
+    .profile img {
+        height: 25px;
+    }
+
+    .searchbox {
+        width: 50%;
+    }
+
+    .searchbox input {
+        width: 100%;
+    }
+
+    .searchbox .cardcount-dropdown {
+        width: 40%;
+    }
+}
